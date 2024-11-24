@@ -1,0 +1,129 @@
+body{
+    background-color:black;
+    color: white;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+    color: black;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+ul{
+    list-style: none;
+    text-align: right;
+}
+.un{
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0 2rem;
+    float: left;
+    text-decoration: none;
+    
+}
+.d{
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0 2rem;
+    float: right;
+    text-decoration: none;
+}
+
+nav p{
+    display: inline-block;
+}
+nav h1{
+    color: white;
+    font-size: 3rem;
+}
+
+article{
+    text-align: center;
+    margin: auto;
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 90%;
+}
+article p{
+    font-size: 2rem;
+}
+article a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 2rem;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+article img{
+    border-radius: 2rem;
+}
+article a:hover{
+    color: blue;
+}
+input[type=text],input[type=date],input[type=email]{
+    border-radius: 0.3rem;
+    height: 1.5rem;
+    width: 20rem;
+
+}
+
+select{
+    border-radius: 0.3rem;
+    height: 1.5rem;
+    width: 20rem;
+}
+
+li{
+    font-size: 2rem;
+    margin-right: 3rem;
+}
+
+    .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    }
+    .rate:not(:checked) > label {
+        width:1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:30px;
+        color:#ccc;
+        }
+    .rate:not(:checked) > label:before {
+    content: '★ ';
+    }
+    .rate > input:checked ~ label {
+    color: #ffc700;
+    }
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+    }
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+    }
+    
