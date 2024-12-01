@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>النظام الشمسي</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>معرض الصور</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,8 +24,17 @@
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" style="margin-right: 2%">استكشف</a>
-      <a class="navbar-brand" style="position: inherit; margin-right: 3%"
+      <button
+        class="btn btn-danger back-btn"
+        onclick="window.location.href='index.html';"
+        style="margin-right: 2%; font-size: 20px"
+      >
+        العودة
+      </button>
+      <a
+        class="navbar-brand"
+        href="./index.html"
+        style="position: inherit; margin-right: 3%"
         ><img src="./img/nasa-logo.png" alt="NASA Logo"
       /></a>
       <a
@@ -37,119 +45,64 @@
         >الموقع الرسمي لوكالة ناسا</a
       >
     </nav>
-    <div class="all">
-      <div class="main">
-        <h3><b>مقدمة عن النظام الشمسي</b></h3>
-        <p>
-          يتكون النظام الشمسي من ثمانية كواكب: عطارد، الزهرة، الأرض، المريخ،
-          المشتري، زحل، أورانو ونبتون. هناك خمسة كواكب قزمة معترف بها رسميًا في
-          نظامنا الشمسي: سيريس، بلوتو، هوميا، ماكيماكي، وإيريس.
-        </p>
-        <a href="what.html" class="btn btn-primary">ما هو الكوكب</a>
-        <a href="gallery.html" class="btn btn-success">معرض الصور</a>
-      </div>
-      <div class="side">
-        <img class="omg" src="./img/solar.jpg" alt="Solar System" />
-      </div>
-      <div class="idk">
-        <table class="table table-hover table-sm table-dark">
-          <thead>
-            <tr>
-              <th>عطارد</th>
-              <th>الزهرة</th>
-              <th>الأرض</th>
-              <th>المريخ</th>
-              <th>المشتري</th>
-              <th>زحل</th>
-              <th>أورانو</th>
-              <th>نبتون</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                عطارد هو أصغر كوكب في نظامنا الشمسي، وأقرب الكواكب إلى الشمس.
-              </td>
-              <td>
-                كوكب الزهرة هو الكوكب الثاني من الشمس، وأقرب كوكب جار للأرض.
-              </td>
-              <td>
-                الأرض - كوكبنا الأم - هي الكوكب الثالث من الشمس، وخامس أكبر
-                كوكب.
-              </td>
-              <td>
-                المريخ – الكوكب الرابع من الشمس – عالم مغبر وبارد وصحراوي بغلاف
-                جوي رقيق للغاية.
-              </td>
-              <td>
-                كوكب المشتري هو أكبر كوكب في نظامنا الشمسي، ولو كان غلافًا
-                مجوفًا لاتسع بداخله 1000 كوكب أرضي.
-              </td>
-              <td>
-                زحل هو الكوكب السادس من حيث البعد عن الشمس، وهو ثاني أكبر كوكب
-                في نظامنا الشمسي.
-              </td>
-              <td>
-                الكوكب السابع من حيث البعد عن الشمس، أورانوس لديه ثالث أكبر قطر
-                للكواكب في نظامنا الشمسي.
-              </td>
-              <td>نبتون هو الكوكب الثامن والأبعد في نظامنا الشمسي.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="footer">
-        <div>الإدارة الوطنية للملاحة الجوية والفضاء</div>
-        <a href="review.html" target="_blank">قدم تقييما</a>
-        <hr />
-        <div>
-          <a
-            href="https://www.facebook.com/nasa"
-            class="mx-2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-facebook fa-lg"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/nasa"
-            class="mx-2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-instagram fa-lg"></i>
-          </a>
-          <a
-            href="https://twitter.com/nasa"
-            class="mx-2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-twitter fa-lg"></i>
-          </a>
-          <a
-            href="https://www.youtube.com/user/NASAtelevision"
-            class="mx-2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-youtube fa-lg"></i>
-          </a>
+
+    <div class="gallery-container">
+      <h1>معرض صور النظام الشمسي</h1>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./img/mercury.jpg" alt="عطارد" />
+          <p>عطارد</p>
         </div>
-        <div style="text-align: center; margin-top: 10px">
-          <p style="direction: rtl">حقوق النشر © 2024 آية شيحي</p>
+        <div class="gallery-item">
+          <img src="./img/venus.jpg" alt="الزهرة" />
+          <p>الزهرة</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/earth.jpg" alt="الأرض" />
+          <p>الأرض</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/mars.jpg" alt="المريخ" />
+          <p>المريخ</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/jupiter.jpg" alt="المشتري" />
+          <p>المشتري</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/saturn.avif" alt="زحل" />
+          <p>زحل</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/uranus.png" alt="أورانو" />
+          <p>أورانو</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/neptune.png" alt="نبتون" />
+          <p>نبتون</p>
         </div>
       </div>
     </div>
-    <script>
-      document.querySelectorAll(".footer a").forEach((link) => {
-        link.addEventListener("mouseover", () => {
-          link.style.color = "#f39c12";
-        });
-        link.addEventListener("mouseout", () => {
-          link.style.color = "";
-        });
-      });
-    </script>
+    <div class="footer">
+      <p>&copy; 2024 آية شيحي</p>
+      <div>
+        <a href="https://www.facebook.com/nasa" target="_blank" class="mx-2">
+          <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="https://www.instagram.com/nasa" target="_blank" class="mx-2">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://twitter.com/nasa" target="_blank" class="mx-2">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/user/NASAtelevision"
+          target="_blank"
+          class="mx-2"
+        >
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
